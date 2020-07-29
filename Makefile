@@ -8,9 +8,8 @@ clean: ## Remove .tox and build dirs
 	rm -rf build/
 
 build: clean
-	@./scripts/build_venv.sh
 	@./scripts/build_charm.sh
-	@./scripts/create_zip.py
+	@./scripts/build_venv.sh
 
 # Display target comments in 'make help'
 help: 
