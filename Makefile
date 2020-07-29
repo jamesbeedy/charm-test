@@ -10,6 +10,7 @@ clean: ## Remove .tox and build dirs
 build: clean
 	@./scripts/build_venv.sh
 	@./scripts/build_charm.sh
+	@./scripts/create_zip.py
 
 # Display target comments in 'make help'
 help: 

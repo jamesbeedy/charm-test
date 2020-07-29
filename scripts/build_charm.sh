@@ -19,7 +19,3 @@ cd build/hooks
 ln -s ../dispatch install
 ln -s ../dispatch start
 ln -s ../dispatch upgrade-charm
-
-cd ../../
-
-./scripts/create_zip.py
