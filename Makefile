@@ -5,9 +5,11 @@ lint: ## Run linter
 clean: ## Remove .tox and build dirs
 	rm -rf .tox/
 	rm -rf venv/
-venv:
-	@mkdir -p venv
-	@pip3 install -U --target=./venv --requirement=./requirements.txt
+	rm -rf build/
+
+build: clean
+	@./scripts/build_venv.sh
+	@./scripts/build_charm.sh
 
 # Display target comments in 'make help'
 help: 
